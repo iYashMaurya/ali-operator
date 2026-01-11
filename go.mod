@@ -2,11 +2,14 @@ module github.com/rancher/ali-operator
 
 go 1.25.0
 
-replace google.golang.org/genproto v0.0.0-20190819201941-24fa4b261c55 => google.golang.org/genproto v0.0.0-20250303144028-a0af3efb3deb
+toolchain go1.25.4
 
-replace github.com/rancher/wrangler/v3 => github.com/iYashMaurya/wrangler/v3 v3.0.0-20251229090358-2a0ac2717b07
+replace ( 
+ google.golang.org/genproto v0.0.0-20190819201941-24fa4b261c55 => google.golang.org/genproto v0.0.0-20250303144028-a0af3efb3deb
+ github.com/rancher/wrangler/v3 => github.com/iYashMaurya/wrangler/v3 v3.0.0-20251229090358-2a0ac2717b07
+ github.com/rancher/lasso => github.com/iYashMaurya/lasso v0.0.0-20251229045230-e8b5b0ffb53d
+)
 
-replace github.com/rancher/lasso => github.com/iYashMaurya/lasso v0.0.0-20251229045230-e8b5b0ffb53d
 
 require (
 	github.com/onsi/ginkgo/v2 v2.27.2
